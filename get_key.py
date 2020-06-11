@@ -2,7 +2,7 @@ import win32api as wapi
 import time
 import win32con
 
-keyList = ["W", "A", "S", "D", win32con.VK_LEFT, win32con.VK_RIGHT, win32con.VK_UP, win32con.VK_DOWN1WASD, win32con.VK_ESCAPE]
+keyList = ["W", "A", "S", "D", win32con.VK_LEFT, win32con.VK_RIGHT, win32con.VK_UP, win32con.VK_DOWN, win32con.VK_ESCAPE]
 
 
 def key_check():
