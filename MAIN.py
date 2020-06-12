@@ -1,15 +1,16 @@
-from grabscreen import grab_screen
-import cv2
+# %%
 import time
 
-WINDOWS_SIZE = (0, 40, 800, 600)
-last_time = time.time()
-while True:
-    screen0 = grab_screen(region=WINDOWS_SIZE)
-    screen1 = cv2.cvtColor(screen0, cv2.COLOR_BGR2GRAY)
-    screen2 = cv2.resize(screen1, (200, 125))
+from obtain_sample import generate_sample
+from key_press import *
 
-    cv2.imshow('window', screen1)
-    cv2.waitKey(1)
-    print('time:{}'.format(time.time() - last_time))
-    last_time = time.time()
+
+N_SAMPLE = 5
+for i in range(N_SAMPLE):
+    generate_sample()
+
+key_press('8')
+key_press('8')
+key_press('a')
+
+# %%

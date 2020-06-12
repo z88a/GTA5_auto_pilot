@@ -25,6 +25,7 @@ while True:
         str_keys = str_keys + str(item)
     cv2.imshow('window', screen1)
     cv2.waitKey(1)
+    # cv2.imwrite('F:/data/' + str(grab_time) + '_' + str_keys + '.png', screen2)
     cv2.imwrite('E:/GAME/GTA5/data/' + str(grab_time) + '_' + str_keys + '.png', screen2)
     print(str_keys)
     print('time:{}'.format(time.time() - last_time))
